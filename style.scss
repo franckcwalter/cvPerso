@@ -1,4 +1,5 @@
 $textColor: #EBEBEB;
+$textSecondaryColor: #ebebebc1; 
 $backgroundColor: rgb(43, 43, 43);
 $wrapperColor: rgb(34, 34, 34);
 
@@ -10,7 +11,7 @@ $wrapperColor: rgb(34, 34, 34);
         background-color: $backgroundColor;
     }
 
-    /* WRAPPER GRIS FONCÉ*/
+    /* WRAPPER */
     .wrapper {
         display: flex;
         width: 95%;
@@ -23,31 +24,14 @@ $wrapperColor: rgb(34, 34, 34);
         box-shadow: 2px 2px 30px rgba(124, 124, 124, 0.513);
     }
 
+    
     /*FRANCK WALTER*/
     h1 {
-        color: $textColor;
-        font-size: 70px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
+        font-size: 65px;
         margin-top: 5px;
         margin-bottom: 0px;
         text-shadow: 2px 2px 3px rgb(124, 124, 124);
-    }
-
-    p,
-    h4,
-    h6 {
-        color: $textColor;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    // intitulé des formations et des emplois// 
-    h6 {
-        font-size: 15px;
-    }
-
-    a {
-        text-decoration-color: $textColor;
+        text-align: center;
     }
 
     // TITRES DES CATÉGORIES // 
@@ -60,6 +44,30 @@ $wrapperColor: rgb(34, 34, 34);
         text-align: center;
     }
 
+    // COURTE BIO SOUS LE NOM // 
+    .bio {
+        text-align: center;
+    }
+
+    h1, h3, h4, h6{
+        color: $textColor;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    p{
+        color: $textSecondaryColor;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    // intitulé des formations et des emplois// 
+    h6 {
+        font-size: 15px;
+    }
+
+    a {
+        text-decoration-color: $textColor;
+    }
+
 
     .leftPart {
         display: flex;
@@ -69,9 +77,6 @@ $wrapperColor: rgb(34, 34, 34);
         height: 660px;
         padding: 20px 50px;
 
-        .bio {
-            text-align: center;
-        }
 
         // Paire d'infos infoType et infoContent // 
         .info {
@@ -84,34 +89,26 @@ $wrapperColor: rgb(34, 34, 34);
             margin-right: 20px;
         }
 
-        .infoContent {
-            justify-content: flex-start;
-            text-align: left;
-
-        }
-
         .profil {
             display: flex;
             flex-direction: column;
             align-content: space-around;
             box-sizing: border-box;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
-
-
-
     }
+
 
     .middlePart {
         display: flex;
         flex-direction: column;
         width: 40%;
         height: 690px;
-        padding: 0 50px;
+        padding-right: 50px;
+        padding-left: 50px;
         justify-content: space-evenly;
 
         h6 {
-            text-align: left;
             margin-top: 3px;
             margin-bottom: 3px;
         }
@@ -159,7 +156,8 @@ $wrapperColor: rgb(34, 34, 34);
         justify-content: space-between;
         width: 40%;
         height: 670px;
-        padding: 20px 50px;
+        padding-right: 50px;
+        padding-left: 50px;
         text-align: center;
 
         h6 {
@@ -243,7 +241,7 @@ $wrapperColor: rgb(34, 34, 34);
 
     // TEXTE SOUS les formations et  emplois// 
     p {
-        color: #ebebebc1;
+        color: $textSecondaryColor;
         font-family: 'Courier New', Courier, monospace;
         font-size: 16px;
 

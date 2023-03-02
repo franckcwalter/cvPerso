@@ -1,10 +1,9 @@
-@charset "UTF-8";
 @media (min-width: 1300px) {
   /*COULEUR DE FOND*/
   body {
     background-color: rgb(43, 43, 43);
   }
-  /* WRAPPER GRIS FONCÉ*/
+  /* WRAPPER */
   .wrapper {
     display: flex;
     width: 95%;
@@ -18,23 +17,11 @@
   }
   /*FRANCK WALTER*/
   h1 {
-    color: #EBEBEB;
-    font-size: 70px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-align: center;
+    font-size: 65px;
     margin-top: 5px;
     margin-bottom: 0px;
     text-shadow: 2px 2px 3px rgb(124, 124, 124);
-  }
-  p, h4, h6 {
-    color: #EBEBEB;
-    font-family: "Courier New", Courier, monospace;
-  }
-  h6 {
-    font-size: 15px;
-  }
-  a {
-    text-decoration-color: #EBEBEB;
+    text-align: center;
   }
   h3 {
     color: #EBEBEB;
@@ -44,6 +31,23 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: center;
   }
+  .bio {
+    text-align: center;
+  }
+  h1, h3, h4, h6 {
+    color: #EBEBEB;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  p {
+    color: rgba(235, 235, 235, 0.7568627451);
+    font-family: "Courier New", Courier, monospace;
+  }
+  h6 {
+    font-size: 15px;
+  }
+  a {
+    text-decoration-color: #EBEBEB;
+  }
   .leftPart {
     display: flex;
     flex-direction: column;
@@ -52,9 +56,6 @@
     height: 660px;
     padding: 20px 50px;
   }
-  .leftPart .bio {
-    text-align: center;
-  }
   .leftPart .info {
     display: flex;
     align-items: center;
@@ -62,27 +63,23 @@
   .leftPart .infoType {
     margin-right: 20px;
   }
-  .leftPart .infoContent {
-    justify-content: flex-start;
-    text-align: left;
-  }
   .leftPart .profil {
     display: flex;
     flex-direction: column;
     align-content: space-around;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .middlePart {
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 690px;
-    padding: 0 50px;
+    padding-right: 50px;
+    padding-left: 50px;
     justify-content: space-evenly;
   }
   .middlePart h6 {
-    text-align: left;
     margin-top: 3px;
     margin-bottom: 3px;
   }
@@ -119,7 +116,8 @@
     justify-content: space-between;
     width: 40%;
     height: 670px;
-    padding: 20px 50px;
+    padding-right: 50px;
+    padding-left: 50px;
     text-align: center;
   }
   .rightPart h6 {
