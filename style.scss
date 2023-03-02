@@ -1,0 +1,438 @@
+
+$textColor:  #EBEBEB; 
+$backgroundColor: rgb(43, 43, 43); 
+$wrapperColor: rgb(34,34,34); 
+
+
+@media (min-width: 1300px){
+
+    /*COULEUR DE FOND*/ 
+    body{
+        background-color: $backgroundColor;
+    }
+
+    /* WRAPPER GRIS FONCÉ*/ 
+    .wrapper{
+        display: flex; 
+        width: 95%;
+        height: 700px;
+        margin-left: 30px; 
+        margin-right: 30px;
+        margin-top: 20px; 
+        margin-bottom: 15px; 
+        background-color: $wrapperColor;
+        box-shadow: 2px 2px 30px rgba(124, 124, 124, 0.513);     
+    }
+
+    /*FRANCK WALTER*/ 
+    h1{
+        color: $textColor; 
+        font-size: 70px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        text-align: center;
+        margin-top: 5px; 
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 3px rgb(124, 124, 124); 
+    }
+
+    p, h4, h6{
+        color: $textColor; 
+        font-family: 'Courier New', Courier, monospace; 
+    }
+
+        // intitulé des formations et des emplois// 
+    h6{
+        font-size: 15px; 
+    }
+
+    a{
+        text-decoration-color: $textColor;
+    }
+
+
+    // TITRES DES CATÉGORIES // 
+    h3{ 
+        color: $textColor; 
+        border-top: 1px dashed rgb(207, 207, 207); 
+        border-bottom: 1px dashed rgb(207, 207, 207); 
+        padding: 5px ; 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        text-align: center;
+    }
+
+
+    .leftPart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%; 
+        height: 660px; 
+        padding: 20px 50px;
+
+        .bio{
+            text-align: center;
+        }
+
+        // Paire d'infos infoType et infoContent // 
+        .info{
+            display: flex; 
+            align-items: center;
+        }
+
+        //icônes// 
+        .infoType{
+            margin-right: 20px; 
+        }
+
+        .infoContent{
+            justify-content: flex-start;
+            text-align: left;
+
+        }
+
+        .profil{
+            display: flex; 
+            flex-direction: column; 
+            align-content: space-around; 
+            box-sizing: border-box; 
+            margin-bottom: 20px;
+        }
+
+
+        
+    }
+
+    .middlePart{
+        display: flex; 
+        flex-direction: column; 
+        width: 40%; 
+        height: 690px; 
+        padding: 0 50px;
+        justify-content: space-evenly;
+
+        h6{
+            text-align: left; 
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+        p{
+            font-size: 11px;
+            text-align:right;
+            margin-bottom: 3px;
+            margin-top: 3px;
+        }
+
+        .competences{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .competenceItem{
+            display:flex; 
+            flex-direction: column;
+            align-items: center;
+
+
+            p{
+                text-align: center;
+                margin-bottom: 15px;
+                margin-top: 3px;
+    
+            }
+    
+            h6{
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 3px;
+            }
+        }
+
+
+    }
+
+    .rightPart{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+        width:40%; 
+        height: 670px; 
+        padding: 20px 50px;
+        text-align: center; 
+
+        h6{
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        p{
+            font-size: 10px;
+            text-align: right; 
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .experienceItem{
+            display:flex; 
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px; 
+            margin-top: 20px;
+        }
+
+        .hobbies{
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-evenly;
+        }
+
+        .hobbiesItem{
+            display:flex; 
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+
+            p{
+                text-align: center;
+            }
+
+            h6{
+                text-align: center;
+            }
+        }
+    
+    }
+        
+    
+}
+
+
+    
+
+/////////////////VERSION MOBILE ////////////////////
+
+
+@media (max-width: 1300px){
+
+    body{
+        background-color: $backgroundColor;
+    }
+
+    .wrapper{
+        display: flex; 
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-top: 5px; 
+        margin-bottom: 5px; 
+        background-color: $wrapperColor;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    // intitulé des formations et des emplois// 
+    h6{
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+        color: $textColor;
+    }
+
+    // TEXTE SOUS les formations et  emplois// 
+    p{
+        color: #ebebebc1;
+        font-family: 'Courier New', Courier, monospace; 
+        font-size: 16px;
+        
+        
+    }
+    
+    a{
+        text-decoration-color: $textColor;
+    }
+
+    // TITRES DES CATÉGORIES // 
+    h3{ 
+    border-top: 1px dashed rgb(207, 207, 207); 
+    border-bottom: 1px dashed rgb(207, 207, 207); 
+    padding: 2px ; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-align: center;
+    color: $textColor;
+    padding-top: 5px; 
+    padding-bottom:5px;
+    }
+
+
+    //HEADER ET PROFIL 
+
+    .leftPart{
+    display: flex;
+    flex-direction: column;
+
+
+        /*FRANCK WALTER*/ 
+        h1{
+        color: $textColor; 
+        font-size: 3.5em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        margin-top: 20px; 
+        margin-bottom: 0px;
+        text-align: center;
+    }
+        .bio{
+            text-align: center;
+            color: $textColor;
+        }
+
+        // Paire d'icône et texte // 
+        .info{
+            display: flex; 
+            align-items: center;
+        }
+
+        //icônes// 
+        .infoType{
+            margin-right: 20px; 
+        }
+
+        //texte à droite des icônes //
+        .infoContent{
+            justify-content: flex-start;
+            font-size: 12px; 
+            color: $textColor;
+        }
+
+        .profil{
+            display: flex; 
+            flex-direction: column; 
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+    }
+
+    .middlePart{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+
+        h6{
+            margin-top: 6px;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+    
+        p{
+            font-size: 12px;
+            text-align:center;
+            margin-bottom: 15px;
+            margin-top: 3px;
+        }
+
+        .formationItem{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .competences{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding:0; 
+        }
+
+        .competenceItem{
+            display:flex; 
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                text-align: center;
+                margin-bottom: 15px;
+                margin-top: 3px;
+    
+            }
+    
+            h6{
+                text-align: center;
+                margin-top: 6px;
+                margin-bottom: 3px;
+            }
+        }
+
+    }
+    
+    
+    .rightPart{
+        display:flex; 
+        flex-direction: column;
+
+        h6{
+            margin-top: 6px;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+    
+        p{
+            font-size: 11px;
+            text-align:center;
+            margin-bottom: 15px;
+            margin-top: 3px;
+        }
+
+
+        .experienceItem{
+            display:flex; 
+            flex-direction: column;
+        }
+    
+        .hobbies{
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    
+        .hobbiesItem{
+            display:flex; 
+            flex-direction: column;
+            align-items: center;
+    
+            p{
+                text-align: center;
+                margin-bottom: 15px;
+                margin-top: 3px;
+    
+            }
+    
+            h6{
+                text-align: center;
+                margin-top: 6px;
+                margin-bottom: 3px;
+            }
+        }
+      
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
