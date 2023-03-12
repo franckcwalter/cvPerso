@@ -1,3 +1,3 @@
 # cvPerso 
 
-Réalisation de mon VC en HTML et CSS 
+Réalisation de mon CV en HTML et CSS 
