@@ -17,7 +17,7 @@
   }
   /*FRANCK WALTER*/
   h1 {
-    font-size: 65px;
+    font-size: 60px;
     margin-top: 5px;
     margin-bottom: 0px;
     text-shadow: 2px 2px 3px rgb(124, 124, 124);
@@ -69,6 +69,7 @@
     align-content: space-around;
     box-sizing: border-box;
     margin-bottom: 10px;
+    font-size: 13px;
   }
 
   #linkPdfVersion{
